@@ -1,7 +1,12 @@
 import React from 'react';
+import Header from './Header';
+import Feed from './Feed';
 
 const App = () => (
-  <h1>Blog</h1>
+  <div>
+    <Header />
+    <Feed />
+  </div>
 );
 
 export default App;
