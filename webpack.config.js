@@ -2,15 +2,18 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    counter: './apps/counter/index.js',
+    'vote-app': './apps/vote-app/index.js'
+  },
   output: {
-    filename: 'index.js',
+    filename: '[name]/index.js',
     path: path.resolve(__dirname, 'bundle')
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader'
@@ -44,10 +47,17 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'src/index.html'
-    })
+      template: 'templates/index.html',
+      filename: 'counter/index.html',
+      title: 'Counter'
+    }),
+    new HtmlWebpackPlugin({
+      template: 'templates/index.html',
+      filename: 'vote-app/index.html',
+      title: 'Vote App'
+    }),
   ],
   resolve: {
-    extensions: ['.js']
+    extensions: ['.js', '.jsx']
   }
 }
