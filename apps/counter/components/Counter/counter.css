@@ -46,6 +46,12 @@
   border-right: 1px solid #cccccc;
   outline: none;
   font-size: 1rem;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #eeeeee;
+  transition: 0.5s;
 }
 
 .controls button:last-child {

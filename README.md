@@ -1,6 +1,7 @@
 <a href="https://reactjs.org/" align="center">
-  <img alt="React.js Logo" src="https://raw.githubusercontent.com/estebanborai/intro-to-react/master/img/react-logo.png" />
-  <br />
+  <p align="center">  
+    <img alt="React.js Logo" src="https://raw.githubusercontent.com/estebanborai/intro-to-react/master/img/react-logo.png" />
+  </p>
 </a>
 <h1 align="center">intro-to-react</h1>
 <p align="center">⚛ Workshop sample code and apps</p>
