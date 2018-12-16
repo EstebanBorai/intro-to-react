@@ -1,9 +1,13 @@
-<a href="https://reactjs.org/">
+<a href="https://reactjs.org/" align="center">
   <img alt="React.js Logo" src="https://raw.githubusercontent.com/estebanborai/intro-to-react/master/img/react-logo.png" />
   <br />
-  <h1 align="center">intro-to-react</h1>
-  <p align="center">⚛ Workshop sample code and apps</p>
 </a>
+<h1 align="center">intro-to-react</h1>
+<p align="center">⚛ Workshop sample code and apps</p>
+
+## Requirements
+- Node.js
+- Text Editor
 
 ## Clone the repository and run it
 ```bash
@@ -14,3 +18,7 @@ npm i && npm start
 # yarn
 yarn && yarn start
 ```
+
+## Contents
+- Counter App
+- Blog App

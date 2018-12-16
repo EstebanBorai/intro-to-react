@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     counter: './apps/counter/index.js',
-    'vote-app': './apps/vote-app/index.js'
+    blog: './apps/blog/index.js'
   },
   output: {
     filename: '[name]/index.js',
@@ -53,8 +53,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: 'templates/index.html',
-      filename: 'vote-app/index.html',
-      title: 'Vote App'
+      filename: 'blog/index.html',
+      title: 'Blog'
     }),
   ],
   resolve: {
