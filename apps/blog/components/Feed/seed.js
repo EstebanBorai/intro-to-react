@@ -22,7 +22,8 @@ const seed = [
       username: 'jane',
       avatar: janeAvatar
     },
-    liked: false
+    liked: false,
+    created: new Date('2018-08-09T01:00:00')
   },
   {
     id: 2,
@@ -36,7 +37,8 @@ const seed = [
       username: 'carlos',
       avatar: carlosAvatar
     },
-    liked: false
+    liked: false,
+    created: new Date('2018-06-04T01:00:00')
   },
   {
     id: 3,
@@ -52,7 +54,8 @@ const seed = [
       username: 'leah',
       avatar: leahAvatar
     },
-    liked: false
+    liked: false,
+    created: new Date('2018-07-12T01:00:00')
   },
   {
     id: 4,
@@ -66,7 +69,8 @@ const seed = [
       username: 'matt',
       avatar: mattAvatar
     },
-    liked: false
+    liked: false,
+    created: new Date('2017-04-11T01:00:00')
   }
 ];
 

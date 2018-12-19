@@ -6,7 +6,10 @@ import Footer from './Footer';
 
 const Post = ({ post, onLike }) => (
   <li className="post">
-    <Header author={post.author} />
+    <Header 
+      author={post.author} 
+      created={post.created} 
+    />
     <Body 
       title={post.title} 
       body={post.body} 

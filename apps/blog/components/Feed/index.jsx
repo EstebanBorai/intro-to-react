@@ -12,6 +12,7 @@ class Feed extends React.Component {
     }
     
     this.onLike = this.onLike.bind(this);
+    this.sortPosts = this.sortPosts.bind(this);
   }
 
   /**
@@ -37,9 +38,29 @@ class Feed extends React.Component {
     });
   }
 
+  sortPosts(posts, filter) {
+    if (filter === 'username') {
+      return posts.sort((a, b) => {
+        return a.author.username - b.author.username
+      });
+    }
+    return posts.sort((a, b) => {
+      return a[filter] - b[filter]
+    });
+  }
+
+  componentWillReceiveProps(nextProps) {
+    const newSortingBy = nextProps.sortingBy;
+    if (newSortingBy !== this.props.sortingBy) {
+      const posts = this.sortPosts(this.state.posts, this.props.sortTypes[newSortingBy].value);
+      this.setState({ posts });
+    }
+  }
+
   componentDidMount() {
+    const posts = this.sortPosts(seed, 'created');
     this.setState({
-      posts: seed
+      posts
     });
   }
 
