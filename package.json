@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/estebanborai/intro-to-react.git"
+    "url": "https://github.com/gutpullsh/intro-to-react.git"
   },
   "keywords": [],
   "author": "Esteban Borai",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/estebanborai/intro-to-react/issues"
+    "url": "https://github.com/gutpullsh/intro-to-react/issues"
   },
-  "homepage": "https://github.com/estebanborai/intro-to-react",
+  "homepage": "https://github.com/gutpullsh/intro-to-react",
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",

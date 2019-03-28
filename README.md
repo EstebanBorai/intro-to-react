@@ -1,6 +1,6 @@
 <a href="https://reactjs.org/" align="center">
   <p align="center">  
-    <img alt="React.js Logo" src="https://raw.githubusercontent.com/estebanborai/intro-to-react/master/img/react-logo.png" />
+    <img alt="React.js Logo" src="https://raw.githubusercontent.com/gutpullsh/intro-to-react/master/img/react-logo.png" />
   </p>
 </a>
 <h1 align="center">intro-to-react</h1>
@@ -12,7 +12,7 @@
 
 ## Clone the repository and run it
 ```bash
-git clone https://github.com/estebanborai/intro-to-react.git
+git clone https://github.com/gutpullsh/intro-to-react.git
 cd intro-to-react
 # npm
 npm i && npm start
